@@ -1,206 +1,176 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Digital Marketing Internship Portfolio</title>
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#0f0f0f;
-color:white;
-}
-
-/* NAVBAR */
-nav{
-position:fixed;
-width:100%;
-top:0;
-background:#111;
-display:flex;
-justify-content:space-between;
-padding:15px 50px;
-z-index:1000;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:0 15px;
-transition:0.3s;
-}
-
-nav a:hover{
-color:#00c6ff;
-}
-
-/* HERO */
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-background:linear-gradient(135deg,#1f1c2c,#928dab);
-text-align:center;
-padding:20px;
-}
-
-.hero h1{
-font-size:45px;
-}
-
-.hero p{
-margin:20px 0;
-font-size:18px;
-}
-
-.btn{
-padding:12px 25px;
-border:none;
-border-radius:30px;
-background:linear-gradient(45deg,#00c6ff,#0072ff);
-color:white;
-cursor:pointer;
-transition:0.3s;
-margin:10px;
-}
-
-.btn:hover{
-transform:scale(1.1);
-}
-
-/* SECTIONS */
-section{
-padding:100px 50px;
-text-align:center;
-}
-
-.cards{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:30px;
-margin-top:40px;
-}
-
-.card{
-background:#1a1a1a;
-padding:25px;
-width:280px;
-border-radius:15px;
-box-shadow:0 15px 35px rgba(0,0,0,0.5);
-transition:0.5s;
-}
-
-.card:hover{
-transform:translateY(-10px) scale(1.05);
-}
-
-/* EMAIL */
-.email-box input{
-padding:10px;
-margin:10px;
-width:250px;
-border:none;
-border-radius:20px;
-}
-
-footer{
-background:#111;
-padding:20px;
-text-align:center;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lal Singh | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<nav>
-<div><b>Lal Singh</b></div>
-<div>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Lal<span> Singh.</span></h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="hero">
-<h1>Digital Marketing Intern 🚀</h1>
-<p>Learning WordPress, SEO & Email Marketing to Build Real-World Skills</p>
-<button class="btn">View My Work</button>
-<button class="btn">Contact Me</button>
-</div>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tag">WELCOME TO MY PORTFOLIO</p>
+            <h1>Hi, I'm <span>Lal Singh</span></h1>
+            <h2>BCA Student & Aspiring Full Stack Developer</h2>
+            <p>
+                I am a passionate computer applications student
+                interested in web development, programming and
+                database management. I enjoy learning new technologies
+                and creating creative digital experiences.
+            </p>
+            <a href="#contact" class="btn">Contact Me</a>
+            <a href="#about" class="btn btn-outline">About Me</a>
+        </div>
 
-<section id="about">
-<h2>About Me</h2>
-<p style="margin-top:20px;">
-I am a passionate Digital Marketing learner currently pursuing internship training. 
-I am building hands-on experience in WordPress website management, SEO optimization 
-and Email Marketing automation.
-</p>
-</section>
+        <div class="profile">
+            <div class="profile-circle">LS</div>
+            <h2>Lal Singh</h2>
+            <p>Future Software Developer</p>
+        </div>
+    </section>
 
-<section id="skills">
-<h2>Skills & Internship Focus</h2>
-<div class="cards">
-<div class="card">
-<h3>WordPress</h3>
-<p>Website creation, theme customization, plugin installation and basic website management.</p>
-</div>
-<div class="card">
-<h3>Email Marketing</h3>
-<p>Creating email lists, designing campaigns and setting up automation workflows.</p>
-</div>
-<div class="card">
-<h3>SEO Basics</h3>
-<p>Keyword research, on-page optimization and improving website visibility.</p>
-</div>
-<div class="card">
-<h3>Social Media Handling</h3>
-<p>Content posting, engagement strategy and basic analytics tracking.</p>
-</div>
-</div>
-</section>
+    <section class="section" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-box">
+            <h3>Hello! I'm Lal Singh</h3>
+            <p>
+                I am pursuing a Bachelor of Computer Applications (BCA)
+                at Poornima University. I am interested in technology,
+                software development and designing websites.
+                My current learning areas include Java, SQL, HTML and CSS.
+                My goal is to become a skilled full stack developer
+                and build useful, user-friendly applications.
+            </p>
+        </div>
+    </section>
 
-<section id="projects">
-<h2>Practice Projects</h2>
-<div class="cards">
-<div class="card">
-<h3>WordPress Practice Site</h3>
-<p>Created a demo website using WordPress and customized themes & plugins.</p>
-</div>
-<div class="card">
-<h3>Email Campaign Demo</h3>
-<p>Designed and tested a sample welcome email automation campaign.</p>
-</div>
-<div class="card">
-<h3>SEO Practice</h3>
-<p>Performed keyword research and optimized a demo webpage.</p>
-</div>
-</div>
-</section>
+    <section class="section" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
 
+        <div class="skills-container">
+            <div class="skill-box">
+                <div class="skill-symbol java">J</div>
+                <h3>Java</h3>
+                <p>Programming and OOP fundamentals</p>
+            </div>
 
+            <div class="skill-box">
+                <div class="skill-symbol sql">DB</div>
+                <h3>SQL</h3>
+                <p>Database queries and management</p>
+            </div>
 
-<section id="contact">
-<h2>Contact Me</h2>
-<p style="margin-top:20px;">📧 slalsingh545@gmail.com</p>
-<p>📱 7737156009</p>
-</section>
+            <div class="skill-box">
+                <div class="skill-symbol html">5</div>
+                <h3>HTML</h3>
+                <p>Web page structure</p>
+            </div>
 
-<footer>
-© 2026 Lal Singh | Digital Marketing Internship Portfolio
-</footer>
+            <div class="skill-box">
+                <div class="skill-symbol css">3</div>
+                <h3>CSS</h3>
+                <p>Styling and responsive layouts</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Personal Portfolio</h3>
+                <p>
+                    A personal website to showcase my profile,
+                    education, skills and contact information.
+                </p>
+                <span class="tech">HTML</span>
+                <span class="tech">CSS</span>
+            </div>
+
+            <div class="project-card">
+                <h3>Student Information System</h3>
+                <p>
+                    A student project concept for organizing
+                    student details and academic information.
+                </p>
+                <span class="tech">Java</span>
+                <span class="tech">SQL</span>
+            </div>
+
+            <div class="project-card">
+                <h3>Responsive Web Design</h3>
+                <p>
+                    A web design practice project focused on
+                    clean layouts and mobile-friendly pages.
+                </p>
+                <span class="tech">HTML</span>
+                <span class="tech">CSS</span>
+            </div>
+        </div>
+        <p class="note">Add your project links and screenshots as you complete them.</p>
+    </section>
+
+    <section class="section" id="education">
+        <h2 class="heading">My <span>Education</span></h2>
+
+        <div class="education-card">
+            <div class="education-icon">🎓</div>
+            <div>
+                <h3>Bachelor of Computer Applications (BCA)</h3>
+                <h4>Poornima University</h4>
+                <p>Currently pursuing</p>
+                <p>Focus: Computer Applications and Software Development</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <p class="contact-intro">
+            Feel free to contact me for opportunities, collaboration
+            or professional networking.
+        </p>
+
+        <div class="contact-box">
+            <p><strong>Name:</strong> Lal Singh</p>
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:slalsingh@gmail.com">
+                    slalsingh@gmail.com
+                </a>
+            </p>
+            <p>
+                <strong>Mobile:</strong>
+                <a href="tel:7737156009">7737156009</a>
+            </p>
+            <p><strong>University:</strong> Poornima University</p>
+            <p><strong>Course:</strong> BCA</p>
+            <a href="mailto:slalsingh@gmail.com" class="btn">Send Email</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Lal Singh | Personal Portfolio</p>
+        <p>Designed with HTML & CSS</p>
+    </footer>
 
 </body>
 </html>
